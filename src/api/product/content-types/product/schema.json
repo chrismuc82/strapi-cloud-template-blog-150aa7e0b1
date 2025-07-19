@@ -1,0 +1,106 @@
+{
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": "Karibu Sauna Product"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "timestamps": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "artikelnummer": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "artikelbezeichnung": {
+      "type": "string"
+    },
+    "material": {
+      "type": "string"
+    },
+    "bauweise": {
+      "type": "string"
+    },
+    "sauna_typ": {
+      "type": "string"
+    },
+    "wandstaerke_mm": {
+      "type": "integer"
+    },
+    "aussenmass_breite_mm": {
+      "type": "integer"
+    },
+    "aussenmass_tiefe_mm": {
+      "type": "integer"
+    },
+    "aussenmass_hoehe_mm": {
+      "type": "integer"
+    },
+    "grundflaeche_m2": {
+      "type": "decimal"
+    },
+    "umbauter_raum_m3": {
+      "type": "decimal"
+    },
+    "spiegelbar": {
+      "type": "boolean"
+    },
+    "tuerart": {
+      "type": "string"
+    },
+    "tuergriff": {
+      "type": "string"
+    },
+    "ofen_typ": {
+      "type": "string"
+    },
+    "ofensteuerung": {
+      "type": "string"
+    },
+    "ofen_spannung_v": {
+      "type": "integer"
+    },
+    "ofen_leistung_kw": {
+      "type": "decimal"
+    },
+    "saunadach_bauweise": {
+      "type": "string"
+    },
+    "produktvorteil_01": {
+      "type": "text"
+    },
+    "produktvorteil_02": {
+      "type": "text"
+    },
+    "produktvorteil_03": {
+      "type": "text"
+    },
+    "artikelbeschreibung": {
+      "type": "richtext"
+    },
+    "ean": {
+      "type": "string"
+    },
+    "zolltarif_nr": {
+      "type": "string"
+    },
+    "gewicht_kg": {
+      "type": "decimal"
+    },
+    "ursprungsland": {
+      "type": "string"
+    },
+    "lieferhinweis": {
+      "type": "text"
+    }
+  }
+}
