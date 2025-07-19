@@ -557,7 +557,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   };
   attributes: {
     artikelbeschreibung: Schema.Attribute.RichText;
-    artikelbezeichnung: Schema.Attribute.String;
+    artikelbezeichnung: Schema.Attribute.String & Schema.Attribute.Required;
     artikelnummer: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
@@ -569,6 +569,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     ean: Schema.Attribute.String;
+    ek_preis_eur: Schema.Attribute.Decimal & Schema.Attribute.Required;
     gewicht_kg: Schema.Attribute.Decimal;
     grundflaeche_m2: Schema.Attribute.Decimal;
     lieferhinweis: Schema.Attribute.Text;
@@ -596,6 +597,8 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     ursprungsland: Schema.Attribute.String;
+    vk_preis_bgn: Schema.Attribute.Decimal;
+    vk_preis_eur: Schema.Attribute.Decimal;
     wandstaerke_mm: Schema.Attribute.Integer;
     zolltarif_nr: Schema.Attribute.String;
   };

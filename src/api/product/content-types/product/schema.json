@@ -22,7 +22,18 @@
       "unique": true
     },
     "artikelbezeichnung": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "ek_preis_eur": {
+      "type": "decimal",
+      "required": true
+    },
+    "vk_preis_eur": {
+      "type": "decimal"
+    },
+    "vk_preis_bgn": {
+      "type": "decimal"
     },
     "material": {
       "type": "string"
